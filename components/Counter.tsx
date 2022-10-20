@@ -4,19 +4,20 @@ import styles from "../styles/Home.module.css";
 function Count() {
   let countNum = 0;
   return (
-    <div>
-      <h1 className={styles.title}>Counter app ++</h1>
+    <div className="grid h-screen place-items-center">
       <div className={styles.title}>
-        <h1 >{countNum}</h1>
-        <button className="m-10 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
-          <span>+</span>
-        </button>
-        <button className="m-10 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
-          <span>-</span>
-        </button>
-        <button className="m-10 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
-          <span>Reset</span>
-        </button>
+        <h1 className={styles.title}>{countNum}</h1>
+        <div className=" border-t-4 border-black pt-10">
+          <button className="btn mx-8">
+            <span className="btn__text px-4">+</span>
+          </button>
+          <button className="btn mx-8">
+            <span className="btn__text">-</span>
+          </button>
+          <button className="btn mx-8">
+            <span className="btn__text">Reset</span>
+          </button>
+        </div>
       </div>
     </div>
   );
